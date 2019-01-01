@@ -191,9 +191,13 @@ header nav ul li a {
 footer {
 	height: 50px;
 	border-top: 3px solid #eee;
+	width: 100%; /* so that the footer appears over whole page width */
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
+	display: flex; /* make it an flex items */
+	align-items: center; /* center the content & make it resposable */
+	justify-content: center;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
