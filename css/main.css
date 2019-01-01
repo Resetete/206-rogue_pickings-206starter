@@ -71,6 +71,8 @@ header h1 {
 	margin: 0;
 	padding: 38px 0;
 	text-align: center; /* for mobile: to have the head line centered */
+	border-bottom: 3px solid #77a466;
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
@@ -88,7 +90,7 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.5em; /* for desktop: 14px = 0.875em */
+	font-size: 1.2em; /* for desktop: 14px = 0.875em */
 	line-height: 2em; /* for mobile version */
 	padding: 0 10px;
 	display: block; /* to let the menu points appear below of each other */
@@ -132,9 +134,10 @@ header nav ul li a {
 	align-items: center;
 }
 .main-title h3 {
-	text-align: justify; /* for mobile: justify; desktop: left */
+	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
+	width: 100%;
 }
 .main-title p {
 	padding: 0;
@@ -158,15 +161,6 @@ header nav ul li a {
 	padding: 10px 0;
 }
 
-/*.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-} doesn't appear in mobile */
-
-/* .section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-} not needed for mobile */
 
 .menu {
 	list-style: none;
@@ -215,3 +209,44 @@ footer span {
 
 
 /* tablet version */
+@media (min-width: 768px)	{
+		.section-two {
+			border-left: 1px solid #eee;
+			border-right: 1px solid #eee;
+		}
+
+		.section-one h4,
+		.section-two h4,
+		.section-three h4 {
+			padding: 0px 0px;
+		}
+
+		.section-one,
+		.section-two,
+		.section-three {
+			width: 33%; /* 80% for mobile - to have some space to the borders of the page; 33% for desktop */
+			height: auto;
+			float: left;
+			border-top: 1px solid #eee;
+			display: flex; /* make flex items */
+			align-items: center; /* "left align" */
+			justify-content: flex-start;
+			flex-flow: row wrap; /* lets the items appear below of each other */
+		}
+
+		.bottom-section {
+			width: 80%;
+			margin: 0 auto;
+			clear: both;
+			display: flex; /* make the header an flex element */
+			justify-content: center; /* center the header elements */
+			align-items: flex-start; /* center the header elements */
+			flex-flow: row nowrap; /* wrap the elements below -> for mobile first */
+		}
+
+}
+
+/* desktop version */
+@media (min-width: 1200px)	{
+
+		}
