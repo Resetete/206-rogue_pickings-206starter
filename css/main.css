@@ -57,13 +57,14 @@ header {
 	display: flex; /* make the header an flex element */
 	justify-content: center; /* center the header elements */
 	align-items: center; /* center the header elements */
-	flex-flow: row wrap; /* wrap the elements below */
+	flex-flow: column wrap; /* wrap the elements below */
 }
 
 header h1 {
 	float: left;
 	margin: 0;
 	padding: 38px 0;
+	text-align: center; /* for mobile: to have the head line centered */
 }
 header h1 span {
 	color: #77a466;
@@ -120,7 +121,7 @@ header nav ul li a {
 	float: left;
 	display: flex; /* make an flex item */
 	justify-content: center; /* center the elements */
-	flex-flow: row wrap; /* let the items appear blow */
+	flex-flow: column wrap; /* let the items appear blow */
 	align-items: center;
 }
 .main-title h3 {
@@ -143,7 +144,7 @@ header nav ul li a {
 	border-top: 1px solid #eee;
 	display: flex; /* make flex items */
 	align-items: flex-start; /* "left align" */
-	flex-flow: row wrap; /* lets the items appear below of each other */
+	flex-flow: column wrap; /* lets the items appear below of each other */
 }
 
 .section-one h4 {
@@ -155,10 +156,10 @@ header nav ul li a {
 	border-right: 1px solid #eee;
 } doesn't appear in mobile */
 
-.section-two h4,
+/* .section-two h4,
 .section-three h4 {
 	padding: 10px 30px;
-}
+} not needed for mobile */
 
 .menu {
 	list-style: none;
@@ -173,11 +174,17 @@ header nav ul li a {
 	color: #333;
 	font-size: 16px;
 	line-height: 21px;
+	padding: 0em; /* for mobile version --> so that text is left aligned */
 }
 
 .address {
 	font-size: 16px;
 	line-height: 24px;
+	padding: 0em; /* for mobile version --> so that text is left aligned */
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-flow: column wrap;
 }
 
 /*The widths are in a percentage!*/
