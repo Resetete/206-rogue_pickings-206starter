@@ -211,15 +211,19 @@ footer span {
 
 /* tablet version */
 @media (min-width: 768px)	{
+		.bottom-section {
+			width: 80%;
+			margin: 0 auto;
+			clear: both;
+			display: flex; /* make the header an flex element */
+			justify-content: center; /* center the header elements */
+			align-items: flex-start; /* center the header elements */
+			flex-flow: row nowrap; /* wrap the elements below -> for mobile first */
+		}
+
 		.section-two {
 			border-left: 1px solid #eee;
 			border-right: 1px solid #eee;
-		}
-
-		.section-one h4,
-		.section-two h4,
-		.section-three h4 {
-			padding: 0px 0px;
 		}
 
 		.section-one,
@@ -235,14 +239,10 @@ footer span {
 			flex-flow: row wrap; /* lets the items appear below of each other */
 		}
 
-		.bottom-section {
-			width: 80%;
-			margin: 0 auto;
-			clear: both;
-			display: flex; /* make the header an flex element */
-			justify-content: center; /* center the header elements */
-			align-items: flex-start; /* center the header elements */
-			flex-flow: row nowrap; /* wrap the elements below -> for mobile first */
+		.section-one h4,
+		.section-two h4,
+		.section-three h4 {
+			padding: 0px 0px;
 		}
 
 }
@@ -284,11 +284,21 @@ footer span {
 			display: inline; /* to let the menu points appear next to each other */
 		}
 
+		.section-one {
+			padding: 10px 0px;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
 
-
-		.section-one,
-		.section-two,
 		.section-three {
+			padding: 10px 30px;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+
+		.section-two {
 			border-left: 1px solid #eee;
 			border-right: 1px solid #eee;
 			padding: 10px 30px;
