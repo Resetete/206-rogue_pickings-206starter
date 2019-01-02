@@ -12,7 +12,6 @@ body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em; /* thats the same as base font 16px = 1em */
 	width: 100%;
-	height: 100%;
 	display: flex; /* make an flex item and center */
 	align-items: center;
 	justify-content: center;
@@ -39,7 +38,7 @@ h1 {
 	font-size: 1.875em; /* 30px = 1.875em for desktop*/
 }
 h2 {
-    font-size: 1.5em; /* 24px */
+  font-size: 1.5em; /* 24px */
 }
 h3 {
 	font-size: 1.125em; /* 18px */
@@ -51,12 +50,11 @@ h4 {
 p {
 	font-size: 0.875em; /* 14px */
 	line-height: 1.313em; /* 21px */
-  padding: 0 30px;
+  padding: 0 1.875em; /* convert all px to em */
 }
 
 /*The widths are in a percentage!*/
 header {
-	height: 100%; /* to let enough space for the elements to appear */
 	border-bottom: 3px solid #77a466;
 	width: 80%; /* to get some space to the page borders */
 	margin: 0 auto;
@@ -67,7 +65,6 @@ header {
 }
 
 header h1 {
-	float: left;
 	margin: 0;
 	padding: 38px 0;
 	text-align: center; /* for mobile: to have the head line centered */
@@ -107,7 +104,6 @@ header nav ul li a {
 .bottom-section {
 	width: 100%;
 	margin: 0 auto;
-	clear: both;
 	display: flex; /* make the header an flex element */
 	justify-content: center; /* center the header elements */
 	align-items: center; /* center the header elements */
@@ -115,7 +111,6 @@ header nav ul li a {
 }
 
 .main-image {
-	height: auto;
 	float: left;
 	width: 80%; /* to get some space to the page borders */
 }
@@ -126,9 +121,7 @@ header nav ul li a {
 }
 
 .main-title {
-	height: auto;
 	width: 80%; /* to get some space to the page borders */
-	float: left;
 	display: flex; /* make an flex item */
 	justify-content: center; /* center the elements */
 	flex-flow: column wrap; /* let the items appear blow */
@@ -151,7 +144,6 @@ header nav ul li a {
 .section-three {
 	width: 80%; /* 80% for mobile - to have some space to the borders of the page; 33% for desktop */
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 	display: flex; /* make flex items */
 	align-items: flex-start; /* "left align" */
@@ -191,11 +183,9 @@ header nav ul li a {
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
 	width: 100%; /* so that the footer appears over whole page width */
 	margin: 0 auto;
-	clear: both;
 	text-align: center;
 	display: flex; /* make it an flex items */
 	align-items: center; /* center the content & make it resposable */
@@ -214,7 +204,6 @@ footer span {
 		.bottom-section {
 			width: 80%;
 			margin: 0 auto;
-			clear: both;
 			display: flex; /* make the header an flex element */
 			justify-content: center; /* center the header elements */
 			align-items: flex-start; /* center the header elements */
@@ -230,8 +219,6 @@ footer span {
 		.section-two,
 		.section-three {
 			width: 33%; /* 80% for mobile - to have some space to the borders of the page; 33% for desktop */
-			height: auto;
-			float: left;
 			border-top: 1px solid #eee;
 			display: flex; /* make flex items */
 			align-items: flex-start; /* "left align" */
