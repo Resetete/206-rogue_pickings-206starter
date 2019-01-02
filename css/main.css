@@ -24,7 +24,7 @@ body {
 	display: flex; /* make an flex item and center */
 	align-items: center; /* centering content */
 	justify-content: center;
-	flex-flow: row wrap; /* lets the items appear below of each other */
+	flex-flow: column wrap; /* lets the items appear below of each other */
 }
 
 h1,
@@ -74,6 +74,7 @@ header h1 {
 	border-bottom: 3px solid #77a466;
 	width: 100%;
 }
+
 header h1 span {
 	color: #77a466;
 }
@@ -247,6 +248,63 @@ footer span {
 }
 
 /* desktop version */
-@media (min-width: 1200px)	{
-
+@media (min-width: 1000px) {
+		header {
+			width: 80%; /* to get some space to the page borders */
+			margin: 0 auto;
+			display: flex; /* make the header an flex element */
+			justify-content: space-between; /* center the header elements */
+			align-items: center; /* center the header elements */
+			flex-flow: row nowrap; /* wrap the elements below */
 		}
+
+		header h1 {
+			margin: 0;
+			padding: 46px 0;
+			text-align: left; /* for mobile: to have the head line centered */
+			border-bottom: 0px solid white;
+		}
+
+		header nav {
+			padding: 46px 0;
+		}
+
+		header nav ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-flow: row nowrap; /* so that nav elements doesn't wrap and appear in a row*/
+		}
+
+		header nav ul li {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 0.875em; /* for desktop: 14px = 0.875em */
+			padding: 0 10px;
+			display: inline; /* to let the menu points appear next to each other */
+		}
+
+
+
+		.section-one,
+		.section-two,
+		.section-three {
+			border-left: 1px solid #eee;
+			border-right: 1px solid #eee;
+			padding: 10px 30px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.section-one h4 {
+			padding: 10px 0;
+		}
+
+		.section-two h4,
+		.section-three h4 {
+			padding: 10px 0px;
+			text-align: left;
+		}
+
+}
