@@ -24,6 +24,7 @@ body {
 	align-items: center; /* centering content */
 	justify-content: center;
 	flex-flow: column wrap; /* lets the items appear below of each other */
+	font-size: 1em;
 }
 
 h1,
@@ -68,7 +69,7 @@ header h1 {
 	margin: 0;
 	padding: 38px 0;
 	text-align: center; /* for mobile: to have the head line centered */
-	border-bottom: 3px solid #77a466;
+	border-bottom: 0.1em solid #77a466;
 	width: 100%;
 }
 
@@ -78,7 +79,7 @@ header h1 span {
 
 header nav {
 	float: right;
-	padding: 46px 0;
+	padding: 2.875em 0;
 	text-align: center; /* align the text/menu items in the center */
 }
 header nav ul {
@@ -90,7 +91,7 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 1.2em; /* for desktop: 14px = 0.875em */
 	line-height: 2em; /* for mobile version */
-	padding: 0 10px;
+	padding: 0 0.625em; /*10px;*/
 	display: block; /* to let the menu points appear below of each other */
 }
 
@@ -117,7 +118,7 @@ header nav ul li a {
 
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border-bottom: .1875em solid #77a466;
 }
 
 .main-title {
@@ -129,14 +130,14 @@ header nav ul li a {
 }
 .main-title h3 {
 	text-align: left;
-	padding: 5px 0;
+	padding: 0.278em 0; /* 5px = 0.278em*/
 	color: #77a466;
 	width: 100%;
 }
 .main-title p {
 	padding: 0;
 	font-size: 1em; /* 16px */
-	line-height: 25px;
+	line-height: 1.563em; /*25px;*/
 }
 
 .section-one,
@@ -144,36 +145,35 @@ header nav ul li a {
 .section-three {
 	width: 80%; /* 80% for mobile - to have some space to the borders of the page; 33% for desktop */
 	height: auto;
-	border-top: 1px solid #eee;
+	border-top: .0625em solid #eee; /* 1px */
 	display: flex; /* make flex items */
 	align-items: flex-start; /* "left align" */
 	flex-flow: column wrap; /* lets the items appear below of each other */
 }
 
 .section-one h4 {
-	padding: 10px 0;
+	padding: .833em 0; /* 10px */
 }
-
 
 .menu {
 	list-style: none;
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
+	padding: .625em 0; /* 10px */
 	color:#77a466;
 }
 
 .reviews {
 	color: #333;
 	font-size: 1em; /* 16px */
-	line-height: 21px;
+	line-height: 1.3125em; /*21px;*/
 	padding: 0em; /* for mobile version --> so that text is left aligned */
 }
 
 .address {
 	font-size: 1em; /* 16px */
-	line-height: 24px;
+	line-height: 1.3125em; /*21px;*/
 	padding: 0em; /* for mobile version --> so that text is left aligned */
 	display: flex;
 	align-items: flex-start;
@@ -183,19 +183,20 @@ header nav ul li a {
 
 /*The widths are in a percentage!*/
 footer {
-	border-top: 3px solid #eee;
+	border-top: .1875em solid #eee;
 	width: 100%; /* so that the footer appears over whole page width */
 	margin: 0 auto;
 	text-align: center;
 	display: flex; /* make it an flex items */
 	align-items: center; /* center the content & make it resposable */
 	justify-content: center;
+	font-size: 1em;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: 1em; /* 14px; -> calc: p = 0.875em -> base font size = 16px --> 16px*0.875=14px (new base font size for p => 14px/14px=1em)*/
 }
 
 
