@@ -234,16 +234,42 @@ footer span {
 			float: left;
 			border-top: 1px solid #eee;
 			display: flex; /* make flex items */
-			align-items: center; /* "left align" */
+			align-items: flex-start; /* "left align" */
 			justify-content: flex-start;
-			flex-flow: row wrap; /* lets the items appear below of each other */
+			flex-flow: column wrap; /* lets the items appear below of each other */
 		}
 
-		.section-one h4,
-		.section-two h4,
-		.section-three h4 {
+		.section-one h4 {
 			padding: 0px 0px;
 		}
+
+		.section-two h4,
+		.section-three h4 {
+			padding: 0px 10px;
+		}
+
+		.menu li {
+			padding: 0px 0px 10px 0px;
+			color:#77a466;
+		}
+
+		.reviews {
+			color: #333;
+			font-size: 1em; /* 16px */
+			line-height: 21px;
+			padding: 0px 10px; /* for mobile version --> so that text is left aligned */
+		}
+
+		.address {
+			font-size: 1em; /* 16px */
+			line-height: 24px;
+			padding: 0px 10px; /* for mobile version --> so that text is left aligned */
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			flex-flow: column wrap;
+		}
+
 
 }
 
@@ -303,7 +329,7 @@ footer span {
 			border-right: 1px solid #eee;
 			padding: 10px 30px;
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: flex-start;
 		}
 
@@ -314,7 +340,6 @@ footer span {
 		.section-two h4,
 		.section-three h4 {
 			padding: 10px 0px;
-			text-align: left;
 		}
 
 }
